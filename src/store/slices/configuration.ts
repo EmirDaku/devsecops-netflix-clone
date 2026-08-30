@@ -1,4 +1,4 @@
-import { TMDB_V3_API_KEY } from "src/constant";
+import { TMDB_V3_API_KEY } from "../../constant";
 import { tmdbApi } from "./apiSlice";
 
 type ConfigurationType = {
