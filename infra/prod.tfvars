@@ -1,9 +1,0 @@
-resource_group_name = "1-a6ddc245-playground-sandbox"
-vnet_name           = "vnet-aks-1"
-vnet_address_space  = "10.0.0.0/16"
-subnet_name         = "subnet-rg-1"
-subnet_prefix       = "10.0.0.0/24"
-cluster_name        = "aks"
-dns_prefix          = "aks"
-ssh_key_path        = "/Users/emir/.ssh/aks_key.pub"
-node_count          = 1

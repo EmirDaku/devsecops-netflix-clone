@@ -1,42 +1,34 @@
 variable "resource_group_name" {
-  type = string
+  type        = string
   description = "name of resourcegroup"
 }
 variable "cluster_name" {
-  description = "The name of the Kubernetes cluster."
   type        = string
-}
-variable "dns_prefix" {
-  description = "The DNS prefix for the Kubernetes cluster."
-  type        = string
-}
-variable "ssh_key_path" {
-  description = "The file path to the SSH public key."
-  type        = string
+  description = "name of cluster"
 }
 variable "node_count" {
-  description = "The number of nodes in the default node pool."
   type        = number
+  description = "number of nodes"
 }
 
-
-### acr variables ##
-
-#network variables ##3
-
-variable "vnet_name" {
-  type        = string
-  description = "name of the vnet "
-}
 variable "vnet_address_space" {
   type        = string
-  description = "adress of vnet"
+  description = "address space for the vnet"
 }
-variable "subnet_name" {
+variable "subnet_address_prefix" {
   type        = string
-  description = "name of the subnet"
+  description = "address prefix for the subnet"
 }
-variable "subnet_prefix" {
+variable "acr_name" {
   type        = string
-  description = "prefix of subnet"
+  description = "Name of the Azure Container Registry"
+}
+variable "Application_Client_ID" {
+  type      = string
+  sensitive = true
+}
+
+variable "client_secret" {
+  type      = string
+  sensitive = true
 }

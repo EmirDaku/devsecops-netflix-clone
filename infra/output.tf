@@ -1,0 +1,6 @@
+output "aks_name" {
+  value = azurerm_kubernetes_cluster.netflix-clone.name
+}
+output "acr_name" {
+  value = azurerm_container_registry.acr.name
+}
