@@ -10,9 +10,9 @@ resource "azurerm_kubernetes_cluster" "netflix-clone" {
   dns_prefix          = "${var.cluster_name}-dns"
 
   default_node_pool {
-    name           = "default"
-    node_count     = var.node_count
-    vm_size        = "Standard_B2s"
+    name            = "default"
+    node_count      = var.node_count
+    vm_size         = "Standard_B2s"
     os_disk_size_gb = 30
     vnet_subnet_id  = azurerm_subnet.subnet.id
   }
