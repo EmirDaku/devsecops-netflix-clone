@@ -74,7 +74,7 @@ flowchart LR
         Scan --> Build[Docker build & push]
     end
 
-    Build --> REG[(Container Registry<br/>ACR / Docker Hub)]
+    Build --> REG[(Container Registry<br/>ACR  )]
 
     subgraph Azure["Azure"]
         TF[Terraform] -->|provisions| AKS
