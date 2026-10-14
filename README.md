@@ -251,7 +251,7 @@ Workflow files will live in `.github/workflows/`.
 
 ---
 
-## 🛡 Security (DevSecOps)
+## 🛡 Security (DevSecOps) WORKING ON IT 
 
 Security is meant to be part of every stage, not an afterthought.
 
@@ -293,12 +293,12 @@ An ArgoCD `Application` will point to this repo's Helm chart, with automated syn
 - [ ] Architecture diagram and full documentation
 - [ ] CI pipeline (build + lint)
 - [ ] Security scanning in CI (Trivy, Gitleaks, dependency checks)
-- [ ] Push images to a container registry
+- [ ] Push images to a  AZURE container registry
 - [ ] Remote Terraform state (Azure Storage)
 - [ ] Ingress + TLS (cert-manager)
 - [ ] ArgoCD GitOps deployment
 - [ ] Monitoring (Prometheus + Grafana)
-- [ ] Multiple environments (dev / prod)
+
 
 ---
 
@@ -325,26 +325,7 @@ Then confirm in the Azure Portal that the resource group is gone.
 | Service stuck on `<pending>` external IP | Wait a few minutes, then `kubectl describe svc` |
 | Blank page after Docker build | Check the base path in `vite.config.ts` and the port mapping |
 
----
 
-## 🤝 Contributing
-
-Contributions, issues and suggestions are welcome.
-
-1. Fork the repo
-2. Create a branch: `git checkout -b feat/my-change`
-3. Commit using [Conventional Commits](https://www.conventionalcommits.org/): `feat(infra): add remote state backend`
-4. Push and open a Pull Request
-
----
-
-## 📄 License
-
-> ✏️ **TODO:** add a `LICENSE` file (MIT is a common choice for portfolio projects) and update this line.
-
-Distributed under the MIT License. See `LICENSE` for details.
-
----
 
 ## ⚖️ Disclaimer & Credits
 
